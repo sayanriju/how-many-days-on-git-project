@@ -1,0 +1,49 @@
+{
+  "name": "how-many-days-on-git-project",
+  "description": "A PoC Node CLI app to list how many days one has spent (tops!) on a git project",
+  "version": "0.0.1",
+  "author": "Sayan \"Riju\" Chakrabarti <s26c.sayan@gmail.com>",
+  "bin": {
+    "how-many-days-on-git-project": "./bin/run"
+  },
+  "bugs": "https://github.com/sayanriju/how-many-days-on-git-project/issues",
+  "dependencies": {
+    "@oclif/command": "^1.4.32",
+    "@oclif/config": "^1.6.27",
+    "@oclif/plugin-help": "^2.0.5",
+    "date-fns": "^1.29.0",
+    "simple-git": "^1.96.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-oclif": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/sayanriju/how-many-days-on-git-project",
+  "keywords": [
+    "oclif",
+    "git log"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "how-many-days-on-git-project"
+  },
+  "repository": "sayanriju/how-many-days-on-git-project",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "echo NO TESTS"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
