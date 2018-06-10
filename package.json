@@ -1,7 +1,7 @@
 {
-  "name": "how-many-days-on-git-project",
+  "name": "@sayanriju/how-many-days-on-git-project",
   "description": "A PoC Node CLI app to list how many days one has spent (tops!) on a git project",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Sayan \"Riju\" Chakrabarti <s26c.sayan@gmail.com>",
   "bin": {
     "how-many-days-on-git-project": "./bin/run"
@@ -15,9 +15,11 @@
     "simple-git": "^1.96.0"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
-    "eslint-config-oclif": "^1.4.0"
+    "eslint-config-oclif": "^1.4.0",
+    "standard-version": "^4.4.0"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -39,7 +41,9 @@
   "repository": "sayanriju/how-many-days-on-git-project",
   "scripts": {
     "posttest": "eslint .",
-    "test": "echo NO TESTS"
+    "test": "echo NO TESTS && ava",
+    "first-release": "standard-version --first-relase && git push --follow-tags origin master && npm publish --access=public",
+    "release": "standard-version && git push --follow-tags origin master && npm publish --access=public"
   },
   "config": {
     "commitizen": {
