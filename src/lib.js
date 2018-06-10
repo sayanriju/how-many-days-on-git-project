@@ -30,7 +30,7 @@ const gitCount = ({workingDir = '', author = null, before = null, after = null, 
   const git = simpleGit(workingDir)
   const opts = ['-i'] // case insensitive (for --author)
   if (author === null) {
-    opts.push(`--author=${gitUser}`)
+    opts.push(`--author=${gitUser()}`)
   } else {
     opts.push(`--author=${author}`)
   }
