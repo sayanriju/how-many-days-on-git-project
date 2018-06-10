@@ -1,7 +1,7 @@
 {
   "name": "@sayanriju/how-many-days-on-git-project",
   "description": "A PoC Node CLI app to list how many days one has spent (tops!) on a git project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Sayan \"Riju\" Chakrabarti <s26c.sayan@gmail.com>",
   "bin": {
     "how-many-days-on-git-project": "./bin/run"
